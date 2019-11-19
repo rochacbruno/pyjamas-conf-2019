@@ -1,0 +1,18 @@
+{
+  "talks": [
+    {
+      "titulo": "Título da minha talk",
+      "palestrantes": [
+          {"nome": "Fulana", "link": "http://twitter.com/fulana", "img": "http://path/to/avatar.jpg|png"}, 
+          {"nome": "Sicrano", "link": "http://sicrano.me", "img": "http://path/to/avatar.jpg|png"}
+       ],
+       "publico": "iniciante|intermediário|avançado",
+       "descricao": "Nessa talk vamos falar sobre X, Y e Z",
+       "tags": ["xis", "ipsilum", "zê"],
+       "formato": "slides|conversa|live-code|debate",
+       "duracao": 60,
+       "inicio": "2019-12-13 17:30",
+       "url": "http://Youtube.com/watch?id=cvnwhvjvhf"
+    },
+  ]
+}
