@@ -1,183 +1,79 @@
 {
-    "definitions": {},
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://example.com/root.json",
-    "type": "object",
-    "title": "The Root Schema",
-    "required": [
-      "talks"
-    ],
-    "properties": {
-      "talks": {
-        "$id": "#/properties/talks",
-        "type": "array",
-        "title": "The Talks Schema",
-        "items": {
-          "$id": "#/properties/talks/items",
-          "type": "object",
-          "title": "The Items Schema",
-          "required": [
-            "titulo",
-            "palestrantes",
-            "publico",
-            "descricao",
-            "tags",
-            "formato",
-            "duracao",
-            "inicio",
-            "url"
-          ],
-          "properties": {
-            "titulo": {
-              "$id": "#/properties/talks/items/properties/titulo",
-              "type": "string",
-              "title": "The Titulo Schema",
-              "default": "",
-              "examples": [
-                "Abertura da Pyjamas Conf 2019"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "palestrantes": {
-              "$id": "#/properties/talks/items/properties/palestrantes",
-              "type": "array",
-              "title": "The Palestrantes Schema",
-              "default": null,
-              "minItems": 1,
-              "items": {
-                "$id": "#/properties/talks/items/properties/palestrantes/items",
-                "type": "object",
-                "title": "The Items Schema",
-                "required": [
-                  "nome",
-                  "link",
-                  "img"
-                ],
-                "properties": {
-                  "nome": {
-                    "$id": "#/properties/talks/items/properties/palestrantes/items/properties/nome",
-                    "type": "string",
-                    "title": "The Nome Schema",
-                    "default": "",
-                    "examples": [
-                      "Pyjamas Org Team"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "link": {
-                    "$id": "#/properties/talks/items/properties/palestrantes/items/properties/link",
-                    "type": "string",
-                    "title": "The Link Schema",
-                    "default": "",
-                    "examples": [
-                      "http://twitter.com/pyjamasconf"
-                    ],
-                    "pattern": "^(.*)$"
-                  },
-                  "img": {
-                    "$id": "#/properties/talks/items/properties/palestrantes/items/properties/img",
-                    "type": "string",
-                    "title": "The Img Schema",
-                    "default": "",
-                    "examples": [
-                      "https://avatars0.githubusercontent.com/u/57928757?s=400&v=4"
-                    ],
-                    "pattern": "^(.*)$"
-                  }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "talks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "type": "string"
+          },
+          "palestrantes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "img": {
+                  "type": "string"
                 }
-              }
-            },
-            "publico": {
-              "$id": "#/properties/talks/items/properties/publico",
-              "type": "string",
-              "enum": [
-                "iniciante",
-                "intermediário",
-                "avançado"
-              ],
-              "title": "The Publico Schema",
-              "default": "",
-              "examples": [
-                "iniciante"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "descricao": {
-              "$id": "#/properties/talks/items/properties/descricao",
-              "type": "string",
-              "title": "The Descricao Schema",
-              "default": "",
-              "examples": [
-                "Abertura oficial do evento"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "tags": {
-              "$id": "#/properties/talks/items/properties/tags",
-              "type": "array",
-              "title": "The Tags Schema",
-              "default": null,
-              "minItems": 1,
-              "uniqueItems": true,
-              "items": {
-                "$id": "#/properties/talks/items/properties/tags/items",
-                "type": "string",
-                "title": "The Items Schema",
-                "default": "",
-                "examples": [
-                  "pyjamas"
-                ],
-                "pattern": "^(.*)$"
-              }
-            },
-            "formato": {
-              "$id": "#/properties/talks/items/properties/formato",
-              "type": "string",
-              "enum": [
-                "conversa",
-                "debate",
-                "slides",
-                "live-code"
-              ],
-              "title": "The Formato Schema",
-              "default": "",
-              "examples": [
-                "conversa"
-              ],
-              "pattern": "^(.*)$"
-            },
-            "duracao": {
-              "$id": "#/properties/talks/items/properties/duracao",
-              "type": "integer",
-              "title": "The Duracao Schema",
-              "default": 0,
-              "examples": [
-                30
-              ],
-              "minimum": 15.0
-            },
-            "inicio": {
-              "$id": "#/properties/talks/items/properties/inicio",
-              "type": "string",
-              "title": "The Inicio Schema",
-              "default": "",
-              "examples": [
-                "2019-12-13 16:00:00"
-              ],
-              "pattern": "^(.*)$",
-            },
-            "url": {
-              "$id": "#/properties/talks/items/properties/url",
-              "type": "string",
-              "title": "The Url Schema",
-              "default": "",
-              "examples": [
-                "https://www.youtube.com/channel/UCWCFzEJd7PhVulMXwGjcYAA"
-              ],
-              "pattern": "^(.*)$"
+              },
+              "required": [
+                "nome",
+                "link",
+                "img"
+              ]
             }
+          },
+          "publico": {
+            "type": "string",
+            "enum": ["iniciante", "intermediário", "avançado"],
+          },
+          "descricao": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "formato": {
+            "type": "string",
+            "enum": ["conversa", "slides", "debate", "live-code"],
+          },
+          "duracao": {
+            "type": "integer"
+          },
+          "inicio": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
           }
-        }
+        },
+        "required": [
+          "titulo",
+          "palestrantes",
+          "publico",
+          "descricao",
+          "tags",
+          "formato",
+          "duracao",
+          "inicio",
+          "url"
+        ]
       }
     }
-  }
+  },
+  "required": [
+    "talks"
+  ]
+}
