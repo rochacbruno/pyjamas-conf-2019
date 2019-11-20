@@ -34,7 +34,7 @@
           },
           "publico": {
             "type": "string",
-            "enum": ["iniciante", "intermediário", "avançado"],
+            "enum": ["iniciante", "intermediário", "avançado"]
           },
           "descricao": {
             "type": "string"
@@ -47,7 +47,7 @@
           },
           "formato": {
             "type": "string",
-            "enum": ["conversa", "slides", "debate", "live-code"],
+            "enum": ["conversa", "slides", "debate", "live-code"]
           },
           "duracao": {
             "type": "integer"
