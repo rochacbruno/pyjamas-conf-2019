@@ -1,12 +1,36 @@
 # Pyjamas-conf-2019
 
-http://Pyjamas.live - Python live do seu sofá, no seu canal
+http://Pyjamas.live - Python live do seu sofá, no seu canal.
 
 Queremos juntar o maior número de conteúdo #python em português (pt-BR)
-em um dia inteiro sobre Python.
+em 24 horas de Python.
 
-Você pode colaborar com programadores iniciantes,
-fazendo uma palestra online no seu canal de YouTube.
+Você pode colaborar fazendo uma transmissão online no seu canal de YouTube ou Twitch.
+
+## Quando?
+
+**Inicio**: 13 de Dezembro de 2019, Sexta-Feira 16h (BRT)  
+**Final**: 14 de Dezembro de 2019, Sábado 16h (BRT)
+
+*(Horário de Brasília)
+
+## Perguntas Frequentes
+
+- Quais são as regras?
+  > Você deve concordar em seguir o [CDC](https://github.com/pyjamasconf/codigo-de-conduta)
+  > Sua transmissão deve tratar sobre #Python ou algum tema relacionado (tecnologias integraveis com Python, Comunidade, Carreira etc)
+
+- Qual horário devo apresentar minha transmissão?
+  > Você pode escolher qualquer horário entre `13/12/2019 16:30 (BRT)` e `14/12/2019 15:30 (BRT)`
+  > Podem ocorrer multiplas transmissões no mesmo horário
+
+- Como farei a transmissão?
+  > Fazer a transmissão é de responsabilidade de quem está propondo a atividade
+  > Você pode usar o seu próprio canal do Youtube ou Twitch
+  > Você pode organizar com outros palestrantes para compartilhar um mesmo canal
+  > Ao submeter a proposta deverá incluir o link para a transmissão (pré agendada no youtube preferencialmente) ou para o canal onde ela ocorrerá
+  > A ferramenta para transmitir pode ser qualquer uma que você já conheça, o mais recomendado é o [OBS](https://obsproject.com/download). Nele é possível transmitir câmera, tela, áudio etc..
+  > Preferencialmente deve ser no Youtube ou Twitch pois essas plataformas mantém a gravação e não têm limite de expectadores.
 
 # Envie sua proposta
 
