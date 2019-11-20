@@ -5,7 +5,7 @@
       "palestrantes": [
           {"nome": "Pyjamas Org Team", "link": "http://twitter.com/pyjamasconf", "img": "https://avatars0.githubusercontent.com/u/57928757?s=400&v=4"}
        ],
-       "publico": "jedi",
+       "publico": "iniciante",
        "descricao": "Abertura oficial do evento",
        "tags": ["pyjamas"],
        "formato": "conversa",
@@ -21,7 +21,7 @@
        "publico": "iniciante",
        "descricao": "encerramento oficial do evento",
        "tags": ["pyjamas"],
-       "formato": "blarg",
+       "formato": "conversa",
        "duracao": 30,
        "inicio": "2019-12-14 15:30:00",
        "url": "https://www.youtube.com/channel/UCWCFzEJd7PhVulMXwGjcYAA"
