@@ -1,15 +1,17 @@
-# Pyjamas-conf-2019
+# PyJamas Conf 2019
 
-http://Pyjamas.live - Python live do seu sofá, no seu canal.
+https://pyjamas.live - Python ao vivo do seu sofá, no seu canal 🛋 💻 🐍
 
-Queremos juntar o maior número de conteúdo #python em português (pt-BR)
-em 24 horas de Python.
+Queremos transmitir o maior número de conteúdo #python em português (pt-BR)
+em 24 horas.
+
+O intuito é atingir brasileiros espalhados por todo o mundo, nos mais variados fusos 🌎 🕐
 
 Você pode colaborar fazendo uma transmissão online no seu canal de YouTube ou Twitch.
 
 ## Quando?
 
-**Inicio**: 13 de Dezembro de 2019, Sexta-Feira 16h (BRT)  
+**Inicio**: 13 de Dezembro de 2019, Sexta-Feira 16h (BRT)
 **Final**: 14 de Dezembro de 2019, Sábado 16h (BRT)
 
 *(Horário de Brasília)
@@ -26,11 +28,29 @@ Você pode colaborar fazendo uma transmissão online no seu canal de YouTube ou 
 
 - Como farei a transmissão?
   > Fazer a transmissão é de responsabilidade de quem está propondo a atividade
-  > Você pode usar o seu próprio canal do Youtube ou Twitch
+
+  > Você pode usar o seu próprio canal do [Youtube](https://www.youtube.com) ou [Twitch](https://www.twitch.tv)
+
   > Você pode organizar com outros palestrantes para compartilhar um mesmo canal
+
   > Ao submeter a proposta deverá incluir o link para a transmissão (pré agendada no youtube preferencialmente) ou para o canal onde ela ocorrerá
+
+- Qual ferramenta devo utilizar para fazer a transmissão?
+
   > A ferramenta para transmitir pode ser qualquer uma que você já conheça, o mais recomendado é o [OBS](https://obsproject.com/download). Nele é possível transmitir câmera, tela, áudio etc..
-  > Preferencialmente deve ser no Youtube ou Twitch pois essas plataformas mantém a gravação e não têm limite de expectadores.
+
+  > [Como usar OBS para fazer transmissão ao vivo](https://vidmonsters.com/blog/como-usar-obs/)
+
+- Qual plataforma de vídeo devo utilizar?
+
+  > Preferencialmente [Youtube](https://www.youtube.com) ou [Twitch](https://www.twitch.tv), pois essas plataformas mantém a gravação e não têm limite de expectadores.
+
+- Estou enfrentando problemas com a transmissão. O quê devo fazer?
+  > Entre em contato com a nossa organização e iremos lhe ajudar.
+  
+  > Email: pyjamasconf@gmail.com
+
+  > Twitter: https://twitter.com/pyjamasconf
 
 # Envie sua proposta
 
@@ -39,11 +59,11 @@ Você pode colaborar fazendo uma transmissão online no seu canal de YouTube ou 
 
 OU...
 
-# 1 - faça um fork deste reposítório
+## 1 - Faça um fork deste reposítório
 
 https://github.com/pyjamasconf/pyjamas-conf-2019/fork
 
-# 2 - Faça o clone do repositório localmente
+## 2 - Faça o clone do repositório localmente
 
 ```bash
 git clone git@github.com:{SEU_USERNAME_AQUI}/pyjamas-conf-2019.git
@@ -51,11 +71,11 @@ cd pyjamas-conf-2019
 git checkout -b minha_talk
 ```
 
-# 3 - Edite o arquivo `talks.json` adicionando sua proposta
+## 3 - Edite o arquivo `talks.json` adicionando sua proposta
 
-> **Atenção**: As chaves do JSON são sem acento minusculas. 
+**Atenção**: As chaves do JSON são sem acento e em letras minúsculas.
 
-> **Todos os dados são obrigatórios**
+**Todos os dados são obrigatórios**
 
 - titulo - str - Título da sua proposta - 140 chars
 - palestrantes - list[dict] - Lista de palestrantes
@@ -75,7 +95,7 @@ git checkout -b minha_talk
     {
       "titulo": "Título da minha talk",
       "palestrantes": [
-          {"nome": "Fulana", "link": "http://twitter.com/fulana", "img": "http://path/to/avatar.jpg|png"}, 
+          {"nome": "Fulana", "link": "http://twitter.com/fulana", "img": "http://path/to/avatar.jpg|png"},
           {"nome": "Sicrano", "link": "http://sicrano.me", "img": "http://path/to/avatar.jpg|png"}
        ],
        "publico": "iniciante",
@@ -90,7 +110,7 @@ git checkout -b minha_talk
 }
 ```
 
-# 4 Faça o commit e push das suas alterações
+## 4 Faça o commit e push das suas alterações
 
 ```bash
 git add talks.json
@@ -98,11 +118,11 @@ git commit -am "Proposta: Titulo da minha talk"
 git push -u origin HEAD
 ```
 
-# 5 Envie um Pull Request 
+## 5 Envie um Pull Request
 
 https://github.com/pyjamasconf/pyjamas-conf-2019/compare/master...SEU_USERNAME_AQUI:minha_talk
 
-# 6 Aguarde o seu PR ser aprovado
+## 6 Aguarde o seu PR ser aprovado
 
 Iremos fazer o review da sua proposta aguarde comentários e updates no seu PR.
 
