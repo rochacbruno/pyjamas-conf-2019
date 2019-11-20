@@ -165,7 +165,6 @@
                 "2019-12-13 16:00:00"
               ],
               "pattern": "^(.*)$",
-              "format": null
             },
             "url": {
               "$id": "#/properties/talks/items/properties/url",
