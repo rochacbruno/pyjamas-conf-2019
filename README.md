@@ -23,7 +23,7 @@ Você pode colaborar fazendo uma transmissão online no seu canal de YouTube ou 
   > Sua transmissão deve tratar sobre #Python ou algum tema relacionado (tecnologias integraveis com Python, Comunidade, Carreira etc)
 
 - Qual horário devo apresentar minha transmissão?
-  > Você pode escolher qualquer horário entre `13/12/2019 16:30 (BRT)` e `14/12/2019 15:30 (BRT)`
+  > Você pode escolher qualquer horário entre `13/12/2019 16:30:00 (BRT)` e `14/12/2019 16:00:00 (BRT)`
   > Podem ocorrer multiplas transmissões no mesmo horário
 
 - Como farei a transmissão?
@@ -84,7 +84,7 @@ git checkout -b minha_talk
 - tags - list[str] - Lista de tags referentes a sua proposta [veja sugestão de tags](#tags)
 - formato - str - Opções: "slides", "conversa", "live-code", "debate"
 - duracao - int - Duração em minutos, ex: 60
-- inicio - str - Formato: YYYY-MM-DD HH:MM periodo válido entre: 2019-12-13 16:30 e 2019-12-14 16:00 (horario de Brasilia)
+- inicio - str - Formato: YYYY-MM-DD HH:MM:SS periodo válido entre: 2019-12-13 16:30:00 e 2019-12-14 16:00:00 (horario de Brasilia)
 - url - str - Url para a seu link de stream ex: http://Youtube.com/c/SeuCanal ou http://Youtube,com/watch?id=78878sfsdf
 
 **talks.json**

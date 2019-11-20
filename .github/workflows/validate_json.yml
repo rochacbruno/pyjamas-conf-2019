@@ -3,7 +3,7 @@ name: Validate JSON
 on: [pull_request]
 
 jobs:
-  validate-json:
+  validate-json-syntax:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
