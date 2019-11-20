@@ -1,0 +1,23 @@
+name: Validate JSON
+
+on: [pull_request]
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install jq JSON processor
+      run: sudo apt-get install jq
+    - name: validates talks.json
+      run: jq '.' talks.json
+
+  verify-json-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: ./schema.json
+          INPUT_JSONS: ./talks.json
