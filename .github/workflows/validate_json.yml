@@ -12,4 +12,4 @@ jobs:
     - name: Install jq JSON processor
       run: sudo apt-get install jq
     - name: validates talks.json
-      run: cat talks.json | jq
+      run: jq '.' talks.json
